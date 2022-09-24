@@ -343,11 +343,18 @@ canvas{
 }
 
 .cards{
+    align-items: center;
     margin: 15px;
     display: flex;
 }
 
-.card-forca{
+.cards a{
+  text-decoration: none;
+}
+
+.card{
+    margin:20px;
+    transition: .7s;
     display: flex;
     flex-direction: column;
     color: var(--color-preto);
@@ -356,23 +363,29 @@ canvas{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: var(--color-branco);
-    max-width: 400px;
+    max-width: 300px;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card:hover{
+  transform: translateX(2px) scale(1.05);
+  transition: .7s;
 }
 
 .img-card{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    max-width:400px;
+    max-width:300px;
 }
 
 .title-cards{
-    color: var(--color-branco);
+    color: var(--color-rosa);
     margin: 10px;   
     text-align: center;
-    background-color: var(--color-rosa);
+    border: 2px solid var(--color-rosa);
     border-radius: 10px;
-    width: 300px;;
+    width: 250px;
 }
 
 .subtitle-cards{
