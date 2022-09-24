@@ -337,7 +337,7 @@ canvas{
 }
 
 /* Responsividade 2120 */
-@media (max-width: 2120px){
+@media (min-width: 2120px){
     .nav-div{   
         font-size: 30px;
     }
