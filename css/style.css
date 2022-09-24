@@ -336,78 +336,8 @@ canvas{
     text-decoration:underline;
 }
 
-/* Responsividade 2110px */
+/* Responsividade 2120 */
 @media (max-width: 2120px){
-    .nav-div{   
-        font-size: 40px;
-    }
-
-    .alternarTema{
-        margin-top: 10px;
-    }
-
-    .switch {
-        width: 120px;
-        height: 60px;
-    }
-
-    .slider:before{
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 10px;
-        bottom: 10px;
-        width: 40px;
-        height: 40px;
-    }
-
-    input:checked + .slider:before {
-        -webkit-transform: translateX(60px);
-        -ms-transform: translateX(60px);
-        transform: translateX(60px);
-      }
-
-      .span-name{
-        font-size: 100px;
-      }
-
-      .title, .sub-title, .fa-blink, .front-end-text{
-        font-size:80px;
-      }
-
-        .btn-linkedin{
-        border: 3px solid var(--color-azul);
-        border-radius: 40px;
-        font-size: 40px;
-        width: 300px;
-        height: 100px;
-      }
-
-      .btn-github{
-        border: 3px solid var(--color-rosa);
-        margin-left: 30px;
-        border-radius: 40px;
-        font-size: 40px;
-        width: 300px;
-        height: 100px;
-      }
-
-      .btn-github:hover ,.btn-linkedin:hover{
-        border: 3px solid var(--color-branco);
-      }
-
-      .title-sobre{
-        font-size: 80px;
-      }
-
-      .subtitle-sobre{
-        font-size: 50px;
-      }
-}
-
-/* Responsividade 1400px */
-@media (max-width: 1400px){
     .nav-div{   
         font-size: 30px;
     }
@@ -474,8 +404,8 @@ canvas{
       }
 }
 
-/* Responsividade 1000px */
-@media (max-width: 1000px){
+/* Responsividade 1200px */
+@media (max-width: 1200px){
     .nav-div{   
         font-size: 20px;
     }
@@ -542,8 +472,8 @@ canvas{
       }
 }
 
-/* Responsividade 560px */
-@media (max-width: 560px){
+/* Responsividade 700px */
+@media (max-width: 700px){
     .nav-div{   
         font-size: 15px;
     }
