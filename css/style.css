@@ -353,6 +353,7 @@ canvas{
 }
 
 .card{
+    margin-top: 20px;
     margin-right: 10px;
     margin-left: 20px;
     transition: .7s;
@@ -611,6 +612,7 @@ canvas{
       }
 
       .cards{
-        max-width: 150px;
+        display: flex;
+        flex-direction: column;
       }
 } 
