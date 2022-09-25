@@ -53,6 +53,7 @@ canvas{
 } 
 
 .container{
+  justify-content: center;
     display: flex;
     flex-direction: column;
 }
@@ -343,14 +344,18 @@ canvas{
 }
 
 .cards{ 
+  justify-content: center;
     align-items: center;
     margin: 15px;
     display: flex;
-    width: 700px;
 }
 
 .cards a{
   text-decoration: none;
+}
+
+.div-card1, .div-card2{
+  display: flex;
 }
 
 .card{
@@ -368,6 +373,7 @@ canvas{
     background-color: var(--color-branco);
     max-width: 300px;
     height: 370px;
+    text-align: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -398,7 +404,7 @@ canvas{
 }
 
 /* Responsividade 2120 */
-@media (min-width: 2120px){
+@media (min-width: 2120px ){
     body{
       max-width: 2120px;
     }
@@ -467,6 +473,14 @@ canvas{
       .subtitle-sobre{
         font-size: 30px;
       }
+}
+
+/* Resoinsividade card */
+@media(max-width: 1350px){
+  .div-card1, .div-card2{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Responsividade 1200px */
@@ -543,7 +557,9 @@ canvas{
       .subtitle-sobre{
         font-size: 25px;
       }
+      
 }
+
 
 /* Responsividade 700px */
 @media (max-width: 700px){
@@ -612,9 +628,12 @@ canvas{
       .subtitle-sobre{
         font-size: 17px;
       }
-
-      .cards{
-        width: 700px;
-        display: flex;
-      }
 } 
+
+/* Responsividade card */
+@media (max-width: 630px){
+  .cards{
+    display: flex;
+    flex-direction: column;
+  }
+}
