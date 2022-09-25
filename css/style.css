@@ -342,7 +342,7 @@ canvas{
     color: var(--color-rosa);
 }
 
-.cards{
+.cards{ 
     align-items: center;
     margin: 15px;
     display: flex;
@@ -353,10 +353,10 @@ canvas{
 }
 
 .card{
-    margin:20px;
+    margin-right: 10px;
+    margin-left: 20px;
     transition: .7s;
-    display: flex;
-    flex-direction: column;
+    display: inline;
     color: var(--color-preto);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -364,6 +364,7 @@ canvas{
     border-bottom-right-radius: 15px;
     background-color: var(--color-branco);
     max-width: 300px;
+    height: 350px;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -395,6 +396,10 @@ canvas{
 
 /* Responsividade 2120 */
 @media (min-width: 2120px){
+    body{
+      max-width: 2120px;
+    }
+
     .nav-div{   
         font-size: 30px;
     }
@@ -463,6 +468,10 @@ canvas{
 
 /* Responsividade 1200px */
 @media (max-width: 1200px){
+  body{
+    max-width: 1200px;
+  }
+
     .nav-div{   
         font-size: 20px;
     }
@@ -535,6 +544,7 @@ canvas{
 
 /* Responsividade 700px */
 @media (max-width: 700px){
+
     .nav-div{   
         font-size: 15px;
     }
@@ -599,4 +609,8 @@ canvas{
       .subtitle-sobre{
         font-size: 17px;
       }
-}
+
+      .cards{
+        max-width: 150px;
+      }
+} 
