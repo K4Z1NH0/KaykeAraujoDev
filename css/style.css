@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 :root{
     --color-preto:#000;
@@ -13,7 +13,6 @@
     --color-azul: rgb(0, 113, 165);
     --color-azul-escuro: rgb(0, 81, 119);
     --color-branco: #fff;
-    --fundo-branco: #fff;
     --color-cinza: #181818; 
 }
 
@@ -61,6 +60,7 @@ canvas{
 .nav-div{   
     display: flex;
 }
+
 
 #menu-h ul{
     margin-top: 10px;
@@ -332,14 +332,14 @@ canvas{
     color: var(--color-rosa);
 }
 
-.cards{ 
+.cards-contaniner{ 
     justify-content: center;
     align-items: center;
     margin: 15px;
     display: flex;
 }
 
-.cards a{
+.cards-contaniner a{
   text-decoration: none;
 }
 
@@ -496,9 +496,8 @@ canvas{
 
 /* Resoinsividade card */
 @media(max-width: 1350px){
-  .div-card1, .div-card2{
-    display: flex;
-    flex-direction: column;
+  .cards-contaniner{
+    width: 650px;
   }
 }
 
@@ -651,7 +650,7 @@ canvas{
 
 /* Responsividade card */
 @media (max-width: 630px){
-  .cards{
+  .cards-contaniner{
     display: flex;
     flex-direction: column;
   }
