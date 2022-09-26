@@ -673,3 +673,34 @@ canvas{
     flex-direction: column;
   }
 }
+
+/* Responsividade nav */
+@media(max-width: 470px){
+  .nav-bg{
+    width: 120px;
+    height: 220px;
+    right: 0; 
+    top:0;
+    position: absolute;
+  }
+
+  .nav-div{
+    margin-top: 25px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+  }
+
+  #menu-h ul li a{
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .alternarTema{
+    margin-right: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+}
