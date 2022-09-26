@@ -574,6 +574,17 @@ nav{
       
 }
 
+.contato{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.title-contato{
+  color: var(--color-rosa);
+}
+
 /*#region MEDIA QUERY*/
 @media (max-width: 320px){
   nav{
