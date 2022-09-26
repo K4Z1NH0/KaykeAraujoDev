@@ -6,7 +6,7 @@
 
 :root{
     --color-preto:#000;
-    --fundo-particula:#000; 
+    --fundo-particula:#141414; 
     --btn-home-color: #fff;
     --color-rosa:#AA7AB6;
     --color-roxo: #775480;
@@ -64,7 +64,7 @@ canvas{
   opacity: 20%;
 }
 
-.nav-div{ 
+nav{ 
     margin-top: 7px;
     right: 15%; 
     top:0;
@@ -97,7 +97,7 @@ canvas{
     transition: 0.7s;
 }
 
-.alternarTema{
+.alternarTema{  
     margin-left: 20px;
     position: absolute;
     margin-top: 3px;
@@ -343,39 +343,26 @@ canvas{
     color: var(--color-rosa);
 }
 
-.cards-contaniner{ 
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-    display: flex;
-}
+/*#endregion*/
 
-.cards-contaniner a{
-  text-decoration: none;
-}
+/*#region projetos*/
 
-.div-card1, .div-card2{
+.projetos{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 20px;
-    transition: .7s;
-    color: var(--color-preto);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: var(--color-branco);
-    max-width: 300px;
-    height: 400px;
-    text-align: center;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+  border-radius: 10px;
+  background-color: var(--color-branco);
+  transition: .7s;
+  color: var(--color-preto);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .card:hover{
@@ -383,28 +370,25 @@ canvas{
   transition: .7s;
 }
 
-.img-card{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    max-width:300px;
+.card img{
+  width: 300px;
+  border-radius: 10px 10px 0px 0px;
 }
 
-.title-cards{
-    color: var(--color-rosa);
-    margin: 10px;   
-    text-align: center;
-    border: 2px solid var(--color-rosa);
-    border-radius: 10px;
-    width: 250px;
+.card .title-cards{
+  text-align: center; 
+  color: var(--color-rosa);
+  margin: 10px; 
+  border: 2px solid var(--color-rosa);
+  border-radius: 10px;
 }
 
-.description-cards{
-    margin: 10px;
-    text-align: center;
+.subtitle-cards{
+  padding: 10px;
+  text-align: center;
 }
 
 .icon-card{
-  bottom: 0;
   width: 100%;
   padding: 0 5px;
   justify-content: space-between;
@@ -413,8 +397,9 @@ canvas{
 }
 
 .icon-card-a{
+  margin-right: 10px;
   text-decoration: none;
-  color: var(--color-preto);
+  color: var(--color-rosa);
 }
 
 #icon-html{
@@ -589,118 +574,87 @@ canvas{
       
 }
 
-/* Responsividade card */
-@media(max-width: 1020px){
-  .cards-contaniner{
-    display: flex;
-    width: 510px;
-  }   
-}
-
-/* Responsividade 700px */
-@media (max-width: 700px){
-
-    .nav-div{   
-        font-size: 15px;
-    }
-
-    .alternarTema{
-        margin-top: 10px;
-    }
-
-    .switch {
-        width: 40px;
-        height: 20px;
-    }
-
-    .slider:before{
-        position: absolute;
-        content: "";
-        height: 13px;
-        width: 13px;
-        left: 5px;
-        bottom: 3.5px;
-    }
-
-    input:checked + .slider:before {
-        -webkit-transform: translateX(17px);
-        -ms-transform: translateX(17px);
-        transform: translateX(17px);
-      }
-
-      .span-name, .fa-blink{
-        font-size: 40px;
-      }
-
-      .title, .sub-title, .front-end-text{
-        font-size:20px;
-      }
-
-        .btn-linkedin{
-        border: 2px solid var(--color-azul);
-        border-radius: 15px;
-        font-size: 15px;
-        width: 100px;
-        height: 40px;
-      }
-
-      .btn-github{
-        border: 2px solid var(--color-rosa);
-        margin-left: 5px;
-        border-radius: 15px;
-        font-size: 15px;
-        width: 100px;
-        height: 40px;
-      }
-
-      .btn-github:hover ,.btn-linkedin:hover{
-        border: 2px solid var(--color-branco);
-      }
-
-      .title-sobre{
-        font-size: 30px;
-      }
-
-      .subtitle-sobre{
-        font-size: 17px;
-      }
-} 
-
-/* Responsividade card */
-@media (max-width: 630px){
-  .cards-contaniner{
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-/* Responsividade nav */
-@media(max-width: 470px){
-  .nav-bg{
-    width: 120px;
-    height: 220px;
-    right: 0; 
-    top:0;
-    position: absolute;
+/*#region MEDIA QUERY*/
+@media (max-width: 320px){
+  nav{
+      font-size: .7em;
   }
 
-  .nav-div{
-    margin-top: 25px;
-    position: absolute;
-    right: 0;
-    margin-right: 20px;
-  }
-
-  #menu-h ul li a{
-    display: flex;
-    flex-direction: column;
-  } 
-
-  .alternarTema{
-    margin-right: 40px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  .switch {
+      position: relative;
+      display: inline-block;
+      width: 32px;
+      height: 17px;
+      margin-right: 4px;
+      margin-top: 8px;
+    }
     
+  .slider:before {
+      height: 14px;
+      width: 14px;
+      left: 2px;
+      bottom: 2px;
+  }
+    
+  input:checked + .slider:before {
+      -webkit-transform: translateX(14px);
+      -ms-transform: translateX(14px);
+      transform: translateX(14px);
+  }
 }
+
+@media (min-width: 375px){
+  nav{
+      font-size: .9em;
+  }
+
+  .switch {
+      position: relative;
+      display: inline-block;
+      width: 35px;
+      height: 20px;
+      margin-right: 3px;
+      margin-top: 12px;
+    }
+    
+  .slider:before {
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+  }
+    
+  input:checked + .slider:before {
+      -webkit-transform: translateX(16px);
+      -ms-transform: translateX(16px);
+      transform: translateX(16px);
+  }
+}
+
+@media (min-width: 425px){
+  nav{
+      font-size: 1em;
+  }
+
+  .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 22px;
+      margin-right: 4px;
+      margin-top: 8px;
+    }
+    
+  .slider:before {
+      height: 18px;
+      width: 18px;
+      left: 2px;
+      bottom: 2px;
+  }
+    
+  input:checked + .slider:before {
+      -webkit-transform: translateX(18px);
+      -ms-transform: translateX(18px);
+      transform: translateX(18px);
+  }
 }
