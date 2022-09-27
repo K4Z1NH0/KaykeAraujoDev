@@ -77,14 +77,11 @@ nav{
 }
 
 .logo{
+  transition: .4s;
   margin-left: 20px;
   position: fixed;
   left: 0;
   color: var(--color-branco);
-}
-
-#nav-icon{
-
 }
 
 #menu-h ul{
@@ -514,7 +511,9 @@ nav{
       font-size: .7em;
   }
 
-  .logo{display: none;}
+  .logo{
+    display: none;
+  }
 
   .switch {
       position: relative;
