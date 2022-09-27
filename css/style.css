@@ -8,6 +8,7 @@
     --color-preto:#000;
     --fundo-particula:#141414; 
     --btn-home-color: #fff;
+    --color-slider: #505050;
     --color-rosa:#AA7AB6;
     --color-roxo: #775480;
     --color-azul: rgb(0, 113, 165);
@@ -18,6 +19,7 @@
 
 /* Alterar Tema */
 [data-theme="dark"] {
+    --color-slider: #775480;
     --color-preto: #fff;
     --fundo-particula:rgb(255, 255, 255); 
     --color-branco:rgb(0, 0, 0);
@@ -83,7 +85,7 @@ nav{
   margin-left: 20px;
   position: fixed;
   left: 0;
-  color: var(--color-branco);
+  color: var(--color-preto);
 }
 
 #menu-h ul{
@@ -100,7 +102,7 @@ nav{
     margin-left:10px;
     opacity: 100%;
     transition: 0.7s;
-    color:var(--color-branco);
+    color:var(--color-preto);
     text-decoration: none;
     display: inline-block;
 }
@@ -139,7 +141,7 @@ nav{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: rgb(153, 153, 153);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -151,7 +153,7 @@ nav{
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--color-slider);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -431,6 +433,14 @@ nav{
   color: #8512F7;
 }
 
+.contato{
+  text-align: center;
+}
+
+.title-contato{
+  color: var(--color-rosa);
+}
+
 /* Responsividade 2120 */
 @media (min-width: 2120px ){
     body{
@@ -577,8 +587,8 @@ nav{
   nav{
       font-size: 1em;
       text-align: center;
-      right: 50%;
-      left: 50%;
+      justify-content: center;
+
   }
 
   .switch {
