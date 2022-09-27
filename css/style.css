@@ -58,6 +58,7 @@ canvas{
 }
 
 .nav-bg{
+  z-index: 2;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   top:100%;
   position: fixed;
@@ -69,6 +70,7 @@ canvas{
 }
 
 nav{ 
+    z-index: 3;
     margin-top: 7px;
     right: 15%; 
     top:0;
@@ -189,6 +191,7 @@ nav{
 }
 
 .textos-home{
+    z-index: -1;
     margin-top: 70px;
     margin-left: 20px;
 }
@@ -507,8 +510,11 @@ nav{
 
 @media (min-width: 320px){
   nav{
+      text-align: center;
       display: flex;
       font-size: .7em;
+      white-space: nowrap;
+      right: 1%;
   }
 
   .logo{
@@ -536,6 +542,7 @@ nav{
       -ms-transform: translateX(14px);
       transform: translateX(14px);
   }
+
 }
 
 @media (min-width: 375px){
@@ -569,6 +576,9 @@ nav{
 @media (min-width: 425px){
   nav{
       font-size: 1em;
+      text-align: center;
+      right: 50%;
+      left: 50%;
   }
 
   .switch {
@@ -612,5 +622,3 @@ nav{
   }
 
 }
-
-/* @media (max-width:508px) */
