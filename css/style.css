@@ -62,7 +62,7 @@ canvas{
 
 nav{ 
     width: 100%;
-    height: 40px;
+    height: 30px;
     background-color: var(--color-laranja);
     z-index: 2;
     top:0;
@@ -72,17 +72,12 @@ nav{
 }
 
 nav p{
-  margin-top: 5px;
-  margin-left: 20px;
   position: fixed;
-  left: 0;
   color: #fff;
 }
 
 #menu-h ul{
-    margin-top: 5px;
-    left : 0;
-    right: 0;
+    display:flex;
     position: fixed;
     background-color: none;
     list-style-type: none;
@@ -108,9 +103,7 @@ nav p{
 }
 
 .alternarTema{  
-    margin-top:45px;
-    margin-left: 20px;
-    top: 0;
+  position: fixed;
 }
 
 /* The switch - the box around the slider */
@@ -436,81 +429,6 @@ nav p{
   color: var(--color-laranja);
 }
 
-/* Responsividade 2120 */
-@media (min-width: 2120px ){
-    body{
-      max-width: 2120px;
-    }
-
-    .alternarTema{
-        margin-top: 10px;
-    }
-
-    .switch {
-        width: 80px;
-        height: 40px;
-    }
-
-    .slider:before{
-        position: absolute;
-        content: "";
-        height: 30px;
-        width: 30px;
-        left: 10px;
-        bottom: 5px;
-    }
-
-    input:checked + .slider:before {
-        -webkit-transform: translateX(33px);
-        -ms-transform: translateX(33px);
-        transform: translateX(33px);
-      }
-
-      .span-name,.fa-blink{
-        font-size: 80px;
-      }
-
-      .title, .sub-title, .front-end-text{
-        font-size:60px;
-      }
-
-        .btn-linkedin{
-        border: 2px solid var(--color-azul);
-        border-radius: 35px;
-        font-size: 35px;
-        width: 200px;
-        height: 80px;
-      }
-
-      .btn-github{
-        border: 2px solid var(--color-rosa);
-        margin-left: 20px;
-        border-radius: 35px;
-        font-size: 35px;
-        width: 200px;
-        height: 80px;
-      }
-
-      .btn-github:hover ,.btn-linkedin:hover{
-        border: 2px solid var(--color-branco);
-      }
-
-      .title-sobre{
-        font-size: 60px;
-      }
-
-      .subtitle-sobre{
-        font-size: 30px;
-      }
-}
-
-/* Resoinsividade card */
-@media(max-width: 1350px){
-  .cards-contaniner{
-    width: 650px;
-  }
-}
-
 /*#region MEDIA QUERY*/
 
 @media (min-width: 320px){
@@ -520,6 +438,7 @@ nav p{
       font-size: .7em;
       white-space: nowrap;
       right: 1%;
+
   }
 
   nav p{
@@ -624,24 +543,18 @@ nav p{
       -ms-transform: translateX(17px);
       transform: translateX(17px);
   }
-
+}
   
 
 @media (min-width: 600px){
   nav{
+      justify-content: center;
       font-size: 1em;
   }
 
   nav p{
     display: block;
   }
-}
-
-#menu-h ul{
-  left: auto;
-  margin-right: 10px;
-  right: 0;
-}
 }
 
 @media (min-width: 880px){
