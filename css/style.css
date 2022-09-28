@@ -86,7 +86,7 @@ nav{
   margin-left: 20px;
   position: fixed;
   left: 0;
-  color: var(--color-preto);
+  color: #fff;
 }
 
 #menu-h ul{
@@ -103,7 +103,7 @@ nav{
     margin-left:10px;
     opacity: 100%;
     transition: 0.7s;
-    color:var(--color-preto);
+    color:#fff;
     text-decoration: none;
     display: inline-block;
 }
@@ -564,7 +564,7 @@ nav{
 }
 
 @media (min-width: 375px){
-  nav{
+  nav{    
       font-size: .9em;
   }
 
