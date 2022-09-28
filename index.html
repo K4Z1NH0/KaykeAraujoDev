@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="icon" type="imagem/png" href="./images/K__1_-removebg-preview.ico" />
+    <link rel="icon" type="imagem/png" href="./images/favicon_kayke.png" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
@@ -116,9 +116,21 @@
                 </div>
             </div>
         </div>
-        <div id="contato-nav" class="contato">
-            <h1 class="title-contato">Contato</h1>
-        </div>
+        <section id="contato-nav">
+            <h1>Contato</h1>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu Nome">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu Email">
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua Mensagem"></textarea>
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="accessKey" value="d56ce7a8-5aac-4c85-9639-8ff54f15248e">
+                <input type="hidden" name="redirectTo" value="">
+            </form>
+        </section>
     </div>
     <script type="text/javascript" src="./js/javascript.js"></script>
 </body>
