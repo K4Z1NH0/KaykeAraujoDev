@@ -74,7 +74,7 @@ canvas{
 nav{ 
     z-index: 3;
     margin-top: 7px;
-    right: 15%; 
+    right: 0;
     top:0;
     position: fixed;
     display: flex;
@@ -548,11 +548,18 @@ nav{
   }
     
   input:checked + .slider:before {
-      -webkit-transform: translateX(14px);
-      -ms-transform: translateX(14px);
-      transform: translateX(14px);
+      -webkit-transform: translateX(13px);
+      -ms-transform: translateX(13px);
+      transform: translateX(13px);
   }
 
+  .title, .span-name, .fa-blink{
+    font-size: 1.5em;
+  }
+
+  .sub-title{
+    font-size: 1.2em;
+  }
 }
 
 @media (min-width: 375px){
@@ -577,18 +584,24 @@ nav{
   }
     
   input:checked + .slider:before {
-      -webkit-transform: translateX(16px);
-      -ms-transform: translateX(16px);
-      transform: translateX(16px);
+      -webkit-transform: translateX(14px);
+      -ms-transform: translateX(14px);
+      transform: translateX(14px);
+  }
+
+  .title, .span-name, .fa-blink{
+    font-size: 1.7em;
+  }
+
+  .sub-title{
+    font-size: 1.6em;
   }
 }
 
 @media (min-width: 425px){
+
   nav{
       font-size: 1em;
-      text-align: center;
-      justify-content: center;
-
   }
 
   .switch {
@@ -608,16 +621,15 @@ nav{
   }
     
   input:checked + .slider:before {
-      -webkit-transform: translateX(18px);
-      -ms-transform: translateX(18px);
-      transform: translateX(18px);
+      -webkit-transform: translateX(17px);
+      -ms-transform: translateX(17px);
+      transform: translateX(17px);
   }
 }
 
 @media (min-width: 600px){
   nav{
       font-size: 1em;
-      right: 0;
   }
 
   .logo{
@@ -628,7 +640,6 @@ nav{
 @media (min-width: 880px){
   nav{
       font-size: 1em;
-      right: 15%;
   }
 
 }
