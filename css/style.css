@@ -60,29 +60,19 @@ canvas{
     flex-direction: column;
 }
 
-.nav-bg{
-  z-index: 2;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  top:100%;
-  position: fixed;
-  width: 100%;
-  height: 40px;
-  top: 0;
-  background-color: var(--color-laranja);
-  opacity: 100%;
-}
-
 nav{ 
-    z-index: 3;
-    margin-top: 7px;
-    right: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--color-laranja);
+    z-index: 2;
     top:0;
     position: fixed;
     display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.logo{
-  transition: .4s;
+nav p{
+  margin-top: 5px;
   margin-left: 20px;
   position: fixed;
   left: 0;
@@ -90,6 +80,10 @@ nav{
 }
 
 #menu-h ul{
+    margin-top: 5px;
+    left : 0;
+    right: 0;
+    position: fixed;
     background-color: none;
     list-style-type: none;
 }
@@ -528,9 +522,13 @@ nav{
       right: 1%;
   }
 
-  .logo{
+  nav p{
     display: none;
   }
+
+  #menu-h ul{
+    right: auto;
+}
 
   .switch {
       position: relative;
@@ -626,16 +624,24 @@ nav{
       -ms-transform: translateX(17px);
       transform: translateX(17px);
   }
-}
+
+  
 
 @media (min-width: 600px){
   nav{
       font-size: 1em;
   }
 
-  .logo{
+  nav p{
     display: block;
   }
+}
+
+#menu-h ul{
+  left: auto;
+  margin-right: 10px;
+  right: 0;
+}
 }
 
 @media (min-width: 880px){
