@@ -8,9 +8,10 @@
     --color-preto:#000;
     --fundo-particula:#141414; 
     --btn-home-color: #fff;
+    --color-gitbtn: rgb(118, 84, 146);
     --color-slider: #505050;
-    --color-rosa:#AA7AB6;
-    --color-roxo: #775480;
+    --color-laranja:#c0742d;
+    --color-laranja-escuro: rgb(145, 102, 62);
     --color-azul: rgb(0, 113, 165);
     --color-azul-escuro: rgb(0, 81, 119);
     --color-branco: #fff;
@@ -19,7 +20,7 @@
 
 /* Alterar Tema */
 [data-theme="dark"] {
-    --color-slider: #775480;
+    --color-slider: rgb(145, 102, 62);
     --color-preto: #fff;
     --fundo-particula:rgb(255, 255, 255); 
     --color-branco:rgb(0, 0, 0);
@@ -67,7 +68,7 @@ canvas{
   width: 100%;
   height: 40px;
   top: 0;
-  background-color: var(--color-rosa);
+  background-color: var(--color-laranja);
   opacity: 100%;
 }
 
@@ -159,11 +160,11 @@ nav{
   }
   
   input:checked + .slider {
-    background-color: var(--color-rosa);
+    background-color: var(--color-laranja);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px var(--color-rosa);
+    box-shadow: 0 0 1px var(--color-laranja);
   }
   
   input:checked + .slider:before {
@@ -206,7 +207,7 @@ nav{
 
 .span-name{
     font-size: 45px;
-    color: var(--color-rosa);
+    color: var(--color-laranja);
 }
 
 .fa-blink{
@@ -225,42 +226,42 @@ nav{
   
   @-webkit-keyframes front-end-text {
     0% {
-      color: var(--color-azul);
+      color: var(--color-branco)
     }
     10% {
-      color:var(--color-rosa);
+      color:var(--color-laranja);
     }
     20% {
-      color: var(--color-azul);
+      color: var(--color-branco)
     }
     30% {
-      color:var(--color-rosa);
+      color:var(--color-laranja);
     }
     40% {
-      color:var(--color-azul);
+      color:var(--color-branco)
     }
     50% {
-      color:var(--color-rosa);
+      color:var(--color-laranja);
     }
 
     60%{
-        color:var(--color-azul)
+        color:var(--color-branco)    
     }
     
     70%{
-        color:var(--color-rosa)
+        color:var(--color-laranja)
     }
 
     80%{
-        color: var(--color-azul);
+        color: var(--color-branco)
     }
 
     90%{
-        color:var(--color-rosa)
+        color:var(--color-laranja)
     }
 
     100% {
-      color: var(--color-roxo);
+      color: var(--color-branco)
     }
   }
 
@@ -291,7 +292,7 @@ nav{
     color: var(--color-branco);
     background-color: transparent;
     width: 100px;
-    border: 1px solid var(--color-rosa);
+    border: 1px solid var(--color-gitbtn);
     border-radius: 10px;
 }
 
@@ -336,7 +337,7 @@ nav{
 .title-sobre{
     text-align: center;
     margin: 10px;
-    color: var(--color-rosa);
+    color: var(--color-laranja);
 }
 
 .subtitle-sobre{
@@ -345,7 +346,7 @@ nav{
 
 .a-tio, .a-codepen, .a-alura{
     text-decoration: none;
-    color: var(--color-rosa);
+    color: var(--color-laranja);
 }
 
 .a-tio:hover, .a-codepen:hover, .a-alura:hover{
@@ -355,7 +356,7 @@ nav{
 .title-projetos{
     text-align: center;
     margin: 10px;
-    color: var(--color-rosa);
+    color: var(--color-laranja);
 }
 
 /*#endregion*/
@@ -392,9 +393,9 @@ nav{
 
 .card .title-cards{
   text-align: center; 
-  color: var(--color-rosa);
+  color: var(--color-laranja);
   margin: 10px; 
-  border: 2px solid var(--color-rosa);
+  border: 2px solid var(--color-laranja);
   border-radius: 10px;
 }
 
@@ -414,7 +415,7 @@ nav{
 .icon-card-a{
   margin-right: 10px;
   text-decoration: none;
-  color: var(--color-rosa);
+  color: var(--color-preto);
 }
 
 #icon-html{
@@ -438,7 +439,7 @@ nav{
 }
 
 .title-contato{
-  color: var(--color-rosa);
+  color: var(--color-laranja);
 }
 
 /* Responsividade 2120 */
