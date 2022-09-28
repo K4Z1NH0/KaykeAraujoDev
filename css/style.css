@@ -418,19 +418,19 @@ nav{
   color: var(--color-preto);
 }
 
-#icon-html{
+.icon-html{
   color: #F75421;
 }
 
-#icon-css{
+.icon-css{
   color: #006DB4;
 }
 
-#icon-js{
+.icon-js{
   color: #DFC12E;
 }
 
-#icon-boot{
+.icon-boot{
   color: #8512F7;
 }
 
