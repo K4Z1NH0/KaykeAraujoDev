@@ -14,25 +14,25 @@
     <div id="particles-js"></div>  
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <div class="container">
-            <header>
-                <p>K4Z1NH0</p>
-                <nav>
-                    <ul>
-                        <li><a href="#home-nav"><i id="nav-icon" class='bx bxs-home'></i>Home</a></li>
-                        <li><a href="#sobre-nav"><i id="nav-icon" class='bx bxs-help-circle'></i>Sobre</a></li>
-                        <li><a href="#projetos-nav"><i id="nav-icon" class='bx bx-code-alt'></i>Projetos</a></li>
-                        <li><a href="#contato-nav"><i id="nav-icon" class='bx bxs-contact'></i>Contato</a></li>
-                    </ul>
-                </nav>
-                <!-- Rounded switch -->
-                <div class="alternarTema">
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-            </header>
-            <div id="home-nav"></div>  
+        <header>
+            <p>K4Z1NH0</p>
+            <nav>
+                <ul>
+                    <li><a href="#home-nav"><i id="nav-icon" class='bx bxs-home'></i>Home</a></li>
+                    <li><a href="#sobre-nav"><i id="nav-icon" class='bx bxs-help-circle'></i>Sobre</a></li>
+                    <li><a href="#projetos-nav"><i id="nav-icon" class='bx bx-code-alt'></i>Projetos</a></li>
+                    <li><a href="#contato-nav"><i id="nav-icon" class='bx bxs-contact'></i>Contato</a></li>
+                </ul>
+            </nav>
+            <!-- Rounded switch -->
+            <div class="alternarTema">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </header>
+        <div id="home-nav"></div>  
         <div class="textos-home">
             <h1 class="title">Ola! Eu sou<br><span class="span-name">Kayke Araujo</span><span class="fa-blink">|</span></h1>
             <h3 class="sub-title">Desenvolvedor <span class="front-end-text">Front-End</span></h3>
@@ -120,15 +120,14 @@
             <h1>Contato</h1>
             <form action="https://api.staticforms.xyz/submit" method="post">
                 <label>Nome</label>
-                <input type="text" name="name" placeholder="Digite seu Nome">
+                <input type="text" name="name" placeholder="Digite seu Nome" required>
                 <label>Email</label>
-                <input type="email" name="email" placeholder="Digite seu Email">
+                <input type="email" name="email" placeholder="Digite seu Email" required>
                 <label>Mensagem</label>
-                <textarea name="message" cols="30" rows="10" placeholder="Digite sua Mensagem"></textarea>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua Mensagem" required></textarea>
                 <button type="submit">Enviar</button>
-
                 <input type="hidden" name="accessKey" value="d56ce7a8-5aac-4c85-9639-8ff54f15248e">
-                <input type="hidden" name="redirectTo" value="">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/thanks.html">
             </form>
         </section>
     </div>

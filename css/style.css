@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* ::-webkit-scrollbar {
-    display: none;
-} */
-
 :root{
     --color-preto:#000;
     --fundo-particula:#141414; 
@@ -177,10 +173,6 @@ header nav ul li a:hover{
     border-radius: 50%;
   }
 
-.home{
-    display: flex;
-}
-
 .textos-home{
     z-index: -1;
     margin-top: 100px;
@@ -287,7 +279,7 @@ header nav ul li a:hover{
 .btn-github:hover{
     transition: .5s ease-in-out;
     cursor: pointer;
-    border: 1px solid var(--color-branco);
+    border: 1px solid var(--color-laranja);
 }
 
 .btn-linkedin{
@@ -304,7 +296,7 @@ header nav ul li a:hover{
 .btn-linkedin:hover{
     transition: .5s ease-in-out;
     cursor: pointer;
-    border: 1px solid var(--color-branco);
+    border: 1px solid var(--color-laranja);
 }
 
 #icon-github, #icon-linkedin{
@@ -431,6 +423,7 @@ header nav ul li a:hover{
 }
 
 section{
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   background-color: var(--color-laranja);
   display: flex;
@@ -461,6 +454,7 @@ form label{
 }
 
 form input{
+  font-family: 'Poppins', sans-serif;
   padding: 15px;
   outline: none;
   border: none;
@@ -471,6 +465,39 @@ form input{
 
 form input:focus{
   border: 2px solid #181818;
+  border-radius: 16px;
+}
+
+form textarea{
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+}
+
+form textarea:focus{
+  border: 2px solid #181818;
+  border-radius: 16px;
+}
+
+form button{
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #f5f5f5;
+  color:#f5f5f5;
+  transition: all 1s;
+  margin-bottom: 20px;
+}
+
+form button:hover{
+  background-color: #f5f5f5;
+  color: var(--color-laranja);
+  border-radius: 16px;
 }
 
 /*#region MEDIA QUERY*/
@@ -571,11 +598,11 @@ form input:focus{
 
   header p{
     margin-left: 2px;
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   header nav ul li{
-    font-size: 0.7em;
+    font-size: 0.9em;
     margin: 5px;
   }
 
