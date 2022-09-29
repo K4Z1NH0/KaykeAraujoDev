@@ -13,7 +13,7 @@
     <!-- particles.js container --> 
     <div id="particles-js"></div>  
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <div class="container">
+    <div class="container">    
         <header>
             <p>K4Z1NH0</p>
             <nav>
@@ -117,18 +117,20 @@
             </div>
         </div>
         <section id="contato-nav">
-            <h1>Contato</h1>
-            <form action="https://api.staticforms.xyz/submit" method="post">
-                <label>Nome</label>
-                <input type="text" name="name" placeholder="Digite seu Nome" required>
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Digite seu Email" required>
-                <label>Mensagem</label>
-                <textarea name="message" cols="30" rows="10" placeholder="Digite sua Mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-                <input type="hidden" name="accessKey" value="d56ce7a8-5aac-4c85-9639-8ff54f15248e">
-                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/thanks.html">
-            </form>
+            <div class="container-form">
+                <h1>Contato</h1>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu Nome" required>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Digite seu Email" required>
+                    <label>Mensagem</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Digite sua Mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                    <input type="hidden" name="accessKey" value="d56ce7a8-5aac-4c85-9639-8ff54f15248e">
+                    <input type="hidden" name="redirectTo" value="thanks.html">
+                </form>
+            </div>
         </section>
     </div>
     <script type="text/javascript" src="./js/javascript.js"></script>
