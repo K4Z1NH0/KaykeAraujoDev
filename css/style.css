@@ -5,9 +5,9 @@
     --fundo-particula:#141414; 
     --btn-home-color: #fff;
     --color-gitbtn: rgb(118, 84, 146);
-    --color-slider: #FF4500;
-    --color-laranja:#FF4500;
-    --color-laranja-escuro: #772000;
+    --color-bg-slider: rgb(124, 124, 124);
+    --color-slider: #4b4b4b;
+    --color-azul-claro:#5ba8d4;
     --color-azul: rgb(0, 113, 165);
     --color-azul-escuro: rgb(0, 81, 119);
     --color-branco: #fff;
@@ -16,7 +16,8 @@
 
 /* Alterar Tema */
 [data-theme="dark"] {
-    --color-slider: rgb(0, 0, 0);
+    --color-bg-slider: #5ba8d4;
+    --color-slider: #5ba8d4;
     --color-preto: #fff;
     --fundo-particula:rgb(255, 255, 255); 
     --color-branco:#141414;
@@ -64,7 +65,7 @@ header{
   position: fixed;
   top: 0;
   right: 0;
-  background-color: var(--color-laranja);
+  background-color: var(--color-azul-claro);
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -133,7 +134,7 @@ header nav ul li a:hover{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ffffff;
+    background-color: var(--color-bg-slider);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -151,11 +152,11 @@ header nav ul li a:hover{
   }
   
   input:checked + .slider {
-    background-color: #fff;
+    background-color: #1c70a0;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px var(--color-laranja);
+    box-shadow: 0 0 1px var(--color-azul);
   }
   
   input:checked + .slider:before {
@@ -187,7 +188,7 @@ header nav ul li a:hover{
 
 .span-name{
     font-size: 45px;
-    color: var(--color-laranja);
+    color: var(--color-azul-claro);
 }
 
 .fa-blink{
@@ -209,19 +210,19 @@ header nav ul li a:hover{
       color: var(--color-branco)
     }
     10% {
-      color:var(--color-laranja);
+      color:var(--color-azul-claro);
     }
     20% {
       color: var(--color-branco)
     }
     30% {
-      color:var(--color-laranja);
+      color:var(--color-azul-claro);
     }
     40% {
       color:var(--color-branco)
     }
     50% {
-      color:var(--color-laranja);
+      color:var(--color-azul-claro);
     }
 
     60%{
@@ -229,7 +230,7 @@ header nav ul li a:hover{
     }
     
     70%{
-        color:var(--color-laranja)
+        color:var(--color-azul-claro)
     }
 
     80%{
@@ -237,7 +238,7 @@ header nav ul li a:hover{
     }
 
     90%{
-        color:var(--color-laranja)
+        color:var(--color-azul-claro)
     }
 
     100% {
@@ -279,7 +280,7 @@ header nav ul li a:hover{
 .btn-github:hover{
     transition: .5s ease-in-out;
     cursor: pointer;
-    border: 1px solid var(--color-laranja);
+    border: 1px solid var(--color-azul-claro);
 }
 
 .btn-linkedin{
@@ -296,7 +297,7 @@ header nav ul li a:hover{
 .btn-linkedin:hover{
     transition: .5s ease-in-out;
     cursor: pointer;
-    border: 1px solid var(--color-laranja);
+    border: 1px solid var(--color-azul-claro);
 }
 
 #icon-github, #icon-linkedin{
@@ -317,7 +318,7 @@ header nav ul li a:hover{
 .title-sobre{
     text-align: center;
     margin: 10px;
-    color: var(--color-laranja);
+    color: var(--color-azul-claro);
 }
 
 .subtitle-sobre{
@@ -326,7 +327,7 @@ header nav ul li a:hover{
 
 .a-tio, .a-codepen, .a-alura{
     text-decoration: none;
-    color: var(--color-laranja);
+    color: var(--color-azul-claro);
 }
 
 .a-tio:hover, .a-codepen:hover, .a-alura:hover{
@@ -336,7 +337,7 @@ header nav ul li a:hover{
 .title-projetos{
     text-align: center;
     margin: 10px;
-    color: var(--color-laranja);
+    color: var(--color-azul-claro);
 }
 
 /*#endregion*/
@@ -373,9 +374,9 @@ header nav ul li a:hover{
 
 .card .title-cards{
   text-align: center; 
-  color: var(--color-laranja);
+  color: var(--color-azul-claro);
   margin: 10px; 
-  border: 2px solid var(--color-laranja);
+  border: 2px solid var(--color-azul-claro);
   border-radius: 10px;
 }
 
@@ -419,7 +420,7 @@ header nav ul li a:hover{
 }
 
 .title-contato{
-  color: var(--color-laranja);
+  color: var(--color-azul-claro);
 }
 
 section{
@@ -444,7 +445,7 @@ section{
 }
 
 section h1{
-  color: var(--color-laranja);
+  color: var(--color-azul-claro);
   font-size: 2.5em;
   margin: 20px;
 }
@@ -457,7 +458,7 @@ section form{
 }
 
 form label{
-  color: var(--color-laranja);
+  color: var(--color-azul-claro);
   font-size: 17px;
   margin-bottom: 5px;
 }
@@ -468,7 +469,7 @@ form input{
   font-family: 'Poppins', sans-serif;
   padding: 15px;
   outline: none;
-  border: 2px solid var(--color-laranja);
+  border: 2px solid var(--color-azul-claro);
   margin-bottom: 20px;
   font-size: 15px;
   transition: all 0.5s;
@@ -484,7 +485,7 @@ form textarea{
   font-family: 'Poppins', sans-serif;
   padding: 8px;
   outline: none;
-  border: 2px solid var(--color-laranja);
+  border: 2px solid var(--color-azul-claro);
   font-size: 15px;
   margin-bottom: 30px;
   transition: all 0.5s;
@@ -499,14 +500,14 @@ form button{
   cursor: pointer;
   font-size: 16px;
   background: transparent;
-  border: 2px solid var(--color-laranja);
-  color: var(--color-laranja);
+  border: 2px solid var(--color-azul-claro);
+  color: var(--color-azul-claro);
   transition: all 1s;
   margin-bottom: 20px;
 }
 
 form button:hover{
-  background-color: var(--color-laranja);
+  background-color: var(--color-azul-claro);
   color: var(--color-branco);
   border-radius: 16px;
 }
