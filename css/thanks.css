@@ -4,7 +4,7 @@
     --btn-home-color: #fff;
     --color-gitbtn: rgb(118, 84, 146);
     --color-slider: #FF4500;
-    --color-laranja:#FF4500;
+    --color-azul-claro:#5ba8d4;
     --color-laranja-escuro: #772000;
     --color-azul: rgb(0, 113, 165);
     --color-azul-escuro: rgb(0, 81, 119);
@@ -34,7 +34,7 @@ body{
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-laranja); 
+    background-color: var(--color-azul-claro); 
     color: var(--color-branco);
     font-family: 'Poppins', sans-serif;
 }
@@ -71,7 +71,7 @@ button{
     padding: 10px 55px;
     background-color: #f5f5f5;
     text-decoration: none;
-    color: var(--color-laranja);
+    color: var(--color-azul-claro);
     transition: all .5s;
     border: none;
 }
@@ -79,13 +79,6 @@ button{
 button:hover{
     cursor: pointer;
     border-radius: 16px;
-}
-
-
-.home-icon{
-    margin-right: 10px;
-    color: var(--color-laranja);
-    font-size: 30px;
 }
 
 /* media query´s */
